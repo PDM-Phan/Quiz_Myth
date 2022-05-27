@@ -9,17 +9,7 @@ def menu_admin(str):
           '     4 - SAIR')
 
 
-def mostrar_perguntas_admin(perguntas, sheet):
-    rows = sheet.max_row - 1
-    for p in range(0, rows):
-        print(f'\n{p + 1}º) {perguntas[p]["Questão"]}')
-
-        for alt in perguntas[p]['Alternativas']:
-            print(f"  {alt.replace(':', ')')}")
-        print('')
-
-
-def adcionar_pergunta(sheet, book):
+def adcionar_pergunta(sheet, book, perguntas, alternativas_corretas):
     rows = sheet.max_row
     from time import sleep
     pergunta = []
@@ -89,6 +79,11 @@ def adcionar_pergunta(sheet, book):
     print('Salvando pergunta...')
     sleep(1)
     book.save('C:\\Users\\orian\\PycharmProjects\\QuizGame2.0\\Pasta1.xlsx')
+    pergunta_dic = {}
+    pergunta_dic["Questão"] = questao
+    pergunta_dic['Alternativas'] = alternativas
+    perguntas.append(pergunta_dic)
+    alternativas_corretas.append(alternativas_correta)
     print('Pergunta salva.')
 
 
