@@ -118,14 +118,14 @@ else:
                 raise ValueError
 
             if controle == 1:
-                Functions_Admin.adcionar_pergunta(sheet_quiz, quiz_book)
+                Functions_Admin.adcionar_pergunta(sheet_quiz, quiz_book, perguntas, alternativas)
 
             elif controle == 2:
                 Functions_Admin.remover_pergunta(sheet_quiz, quiz_book)
 
             elif controle == 3:
                 Functions_Admin.mostrar_perguntas_admin(perguntas, sheet_quiz)
-               
+
             elif controle > 3:
                 break
 
@@ -133,4 +133,3 @@ else:
             print('[ERRO] Digite uma opção válida.\n'
                   'tente novamente.')
             continue
-
