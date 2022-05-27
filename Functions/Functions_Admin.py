@@ -20,7 +20,7 @@ def mostrar_perguntas_admin(perguntas, sheet):
 
 
 def adcionar_pergunta(sheet, book):
-    rows = sheet.max_row - 1
+    rows = sheet.max_row
     from time import sleep
     pergunta = []
     # Adiciona a número da questão
