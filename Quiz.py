@@ -125,7 +125,7 @@ else:
 
             elif controle == 3:
                 Functions_Admin.mostrar_perguntas_admin(perguntas, sheet_quiz)
-                1
+               
             elif controle > 3:
                 break
 
