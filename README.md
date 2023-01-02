@@ -1,6 +1,6 @@
 # Quiz_Game
 
-> ### This is a quiz game made for a college project about mythological beings, the game have now has all the functions needed, ENJOY IT s2.
+> ### This is a quiz game made for a college project about mythological beings, the game have now all the functions needed, ENJOY IT s2.
 
 ## What i excepted to create with this project:
 
